@@ -1,0 +1,366 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-black: #000000;
+    --body-bg: #fff;
+}
+
+.darkmode {
+    --color-black: #fff;
+    --body-bg: #000;
+}
+
+#sun {
+    display: none;
+    color: white;
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+.h11 {
+    color: var(--color-black);
+}
+
+.li1 {
+    color: var(--color-black);
+}
+
+.bir {
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    text-align: center;
+    align-items: center;
+}
+
+ul li {
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 600px;
+    justify-content: space-around;
+}
+
+#bt {
+    font-size: 26px;
+    display: none;
+}
+
+.btn {
+    margin: auto;
+    padding: 10px;
+    width: 50px;
+}
+
+.active ul li a:hover {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .active {
+        display: none;
+    }
+
+    nav ul {
+        /* background: gray; */
+        position: fixed;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a:hover {
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 10px;
+
+    }
+
+    #bt {
+        display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 7px
+    }
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    text-align: center;
+}
+
+ul li {
+    justify-content: space-around;
+}
+
+header h1 {
+    color: white;
+    margin: 80px 0px;
+    font-size: 50px;
+}
+
+.bir1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 845px){
+    .bir1{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 380px){
+    .bir1 img{
+    width: 250px;
+    height: 250px;
+    }
+}
+
+.bir1 img {
+    border-radius: 50%;
+}
+
+.bir1 h1 {
+    align-items: center;
+}
+
+.bir2 h2 {
+    color: rgb(7, 167, 159);
+    text-align: center;
+    font-size: 35px;
+    margin: 200px 0px 0px;
+}
+
+.bir3 p {
+    color: #90f70a;
+    text-align: center;
+}
+
+.bir4 {
+    text-align: center;
+}
+
+.bir4 img {
+    padding: 40px 30px;
+}
+
+.bir6 {
+    color: #f80b0b;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bir13 {
+    display: flex;
+    text-align: center;
+    color: #b83535;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 1015px){
+    .bir13{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .bir13{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bir13{
+        grid-template-columns: auto ;
+    }
+}
+
+.bir14 {
+    display: flex;
+    color: #ac3a3a;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 1015px){
+    .bir14{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .bir14{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bir14{
+        grid-template-columns: auto ;
+    }
+}
+
+.bir14 img {
+    padding: 20px;
+}
+
+.bir13 img {
+    padding: 20px;
+}
+
+.bir22 {
+    display: flex;
+    color: #615757;
+    justify-content: space-around;
+    margin: 50px 0px;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 880px){
+    .bir22{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bir22{
+        grid-template-columns: auto ;
+    }
+}
+
+
+ .p {  
+    text-align: center;
+    color: #634f4f;
+    font-size: 20px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  /* background-color: #717171; */
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
